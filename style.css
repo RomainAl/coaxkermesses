@@ -1,0 +1,33 @@
+body{
+    background: black;
+}
+
+div{
+
+}
+
+#teasers{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (orientation: landscape){
+    #teasers div{
+        width: 30%;
+        height: fit-content;
+        padding: 20% 0 0 0;
+        position:relative;
+    }
+}
+
+@media screen and (orientation: portrait){
+
+    #teasers div{
+        width: 100%;
+        height: fit-content;
+        padding: 50% 0 10% 0;
+        position:relative;
+    }
+}
