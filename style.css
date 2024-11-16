@@ -13,11 +13,20 @@ div{
 }
 
 
-@media screen and (orientation: landscape){
+@media screen and (orientation: landscape) and (min-width: 900px){
     #teasers div{
         width: 30%;
         height: fit-content;
         padding: 20% 0 0 0;
+        position:relative;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 900px){
+    #teasers div{
+        width: 50%;
+        height: fit-content;
+        padding: 20% 0 10% 0;
         position:relative;
     }
 }
